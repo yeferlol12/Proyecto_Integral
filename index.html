@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    
+ <!-- Encabezado -->
+ <header class="header">
+    <img class="logo" src="imagenes/C.png" alt="logo">
+    <h1 class="titulo_de_la_pagina">Gestión de Horario</h1>
+</header>
+
+<!-- Contenedor Padre -->
+<div class="container_padre">
+
+    <!-- Menú lateral -->
+    <div class="menulateral">
+        <h1 class="menutitle">Menú</h1>
+        <ul>
+            <li><i class="fa-solid fa-chart-pie"></i> Dashboard</li>
+            <li><i class="fa-solid fa-users"></i> Empleado</li>
+            <li><i class="fa-solid fa-calendar-days"></i> asignacion de tareas</li>
+        </ul>
+    </div>
+
+    <!-- Sección principal -->
+    <section class="section">
+        <h1 class="titulo_de_la_pagina">Actualizar Disponibilidad de Eventos</h1>
+        <p>Complete los campos a continuación para actualizar su disponibilidad</p>
+        <form class="Actualización" action="#" method="POST">
+            <label for="fecha-evento">Fecha del Evento:</label>
+            <input type="date" id="fecha-evento" name="fecha-evento" required>
+
+            <label for="hora-inicio">Hora de Inicio:</label>
+            <input type="time" id="hora-inicio" name="hora-inicio" required>
+
+            <label for="hora-fin">Hora de Finalización:</label>
+            <input type="time" id="hora-fin" name="hora-fin" required>
+
+            <label for="dias-semana">Días Disponibles:</label>
+            <select id="dias-semana" name="dias-semana" multiple required>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+
+            <button type="submit" class="btn primary">Actualizar Disponibilidad</button>
+        </form>
+    </section>
+    
+</div class="asignacion">
+/* From Uiverse.io by guilhermeyohan */ 
+<form class="form">
+<label class="lb" for="nome">Name:</label>
+      <input name="nome" id="nome" type="text" class="infos">
+
+      <label for="dias-semana">Días Disponibles:</label>
+            <select id="dias-semana" name="dias-semana" multiple required>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+            <label for="dias-semana">tareas disponibles</label>
+            <select id="dias-semana" name="dias-semana" multiple required>
+                <option value="lunes">html</option>
+                <option value="martes">css</option>
+                <option value="miercoles">java</option>
+                <option value="jueves">javascript</option>
+                <option value="viernes">next.js</option>
+                
+            </select>
+      <label for="data" class="lb">Date:</label>
+      <input name="data" id="data" type="date" class="infos">
+
+      <button id="send" type="submit">Send</button>
+     
+    </form>
+
+</body>
+</html>
