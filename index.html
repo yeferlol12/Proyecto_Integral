@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/entrada.css">
+    <link rel="stylesheet" href="estilos/salida.css">
 </head>
 <body>
     
@@ -19,13 +21,41 @@
 
     <!-- Menú lateral -->
     <div class="menulateral">
-        <h1 class="menutitle">Menú</h1>
+        <nav>
         <ul>
             <li><i class="fa-solid fa-chart-pie"></i> Dashboard</li>
             <li><i class="fa-solid fa-users"></i> Empleado</li>
             <li><i class="fa-solid fa-calendar-days"></i> asignacion de tareas</li>
+            <li class="inicio"> Inicio  
+                <div class="desplegable"> 
+                <section class="tiempo">
+            <h1 class="head">Inicio del trabajador</h1>
+            <div class="time" style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"
+                 href="https://www.zeitverschiebung.net/es/country/co"><span style="color:rgb(3, 3, 3);">Inicie su dia</span><br 
+                 /></a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
+                 width="100%" height="115" frameborder="0" seamless></iframe> </div>
+            <input class="boton" type="submit" name="incio" id="inicio" value="inicio">
+        </section>
+        </div>  </li>
+        <li class="salida">Salida
+            <div class="desplegable">   
+                <section class="tiempo">
+                    <h1 class="head">Salida del trabajador</h1>
+                    <div class="time" style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"
+                         href="https://www.zeitverschiebung.net/es/country/co"><span style="color:rgb(3, 3, 3);">Marque su salida</span><br 
+                         /></a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
+                         width="100%" height="115" frameborder="0" seamless></iframe> </div>
+                    <input class="boton" type="submit" name="incio" id="inicio" value="Salida">
+                </section>
+                </div>
+             </li>
+         
+
         </ul>
+       </nav>
     </div>
+
+   
 
     <!-- Sección principal -->
     <section class="section">

@@ -80,6 +80,7 @@
     position: sticky; /* Fijado en la parte izquierda */
     top: 1px; /* Ajuste debajo del header */
     padding-top: 0px;
+    z-index: 1000;
   }
   
   /* Estilo del título del menú */
@@ -101,9 +102,7 @@
   
   /* Efecto hover en los elementos de la lista */
   li:hover {
-    position: relative;
-    background: linear-gradient(90deg, #AB674F , #EBCCC8);
-    color: #fff;
+    background-color:#AB674F;
   }
   
   /* Estilo para los íconos en el menú */
