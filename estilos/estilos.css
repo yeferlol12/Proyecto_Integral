@@ -69,21 +69,29 @@
     }
   }
   
-  /* Contenedor principal, define el layout principal */
-  .container_padre {
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-    
-  }
+.nav{
+
+  position: fixed;
+  top: 200px;
+}
   
   /* Menú lateral */
   .menulateral {
-    width: 50px; /* Fijar el ancho del menú lateral */
+    width: 100px; /* Fijar el ancho del menú lateral */
     height: 100%; /* Ocupa toda la altura disponible */
     color: white;
-    position: sticky; /* Fijado en la parte izquierda */
+    position: absolute; /* Fijado en la parte izquierda */
     z-index: 1000;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    
+
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
   }
   
   /* Estilo del título del menú */
@@ -98,7 +106,7 @@
     display: flex;
     cursor: pointer;
     transition: all 300ms ease-in; /* Transición suave al hacer hover */
-    width: 150px;
+    width: auto;
     text-align: center;
   }
   
@@ -113,16 +121,20 @@
   
   /* Sección principal */
   .section {
+    top: 40px;
     position: relative;
     width: 80%; /* Ocupa todo el ancho disponible */
     height: 100%;
-    margin-left: 130px; /* Margen para evitar solaparse con el menú lateral */
+    display: flex;
+    flex-direction: column;
+    left: 200px;
     padding: 10px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(252, 251, 251, 0.1)/*ombra alrededor de la sección */
 
   }
+
   
   /* Estilo del título de la sección */
   .titulo {
@@ -148,41 +160,56 @@
     flex-direction: column; /* Coloca los elementos en una columna */
     align-content: center;
     position: relative;
-    left: 150px;
-    
+    left: 280px;
+    align-items: center;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220628/pngtree-complex-tech-background-with-molecules-and-data-connection-form-design-photo-image_37390678.jpg);
     gap: 1px; /* Espacio entre los elementos */
-    width: 70%;
+    width: 50%;
     border: solid black 1px;
+    padding: 5px;
   }
   
   /* Estilo para los labels */
   .Actualización label  {
-    color: #555; /* Color gris oscuro */
+    background-color: white;
     font-size: 14px;
     margin-bottom: 2px;
     border: solid black 1px;
-    width: 50%;
+    width: 80%;
+    padding: 10px;
   }
   
   /* Estilo para los campos de input y select */
   .Actualización  input {
-    padding: 5x;
+    padding: 15px;
     border: 1px solid #000000; /* Borde gris claro */
     font-size: 16px;
-    width: 50%; /* Ocupa todo el ancho disponible */
+    width: 80%; /* Ocupa todo el ancho disponible */
+  }
+
+  .dias{
+    display: none;
+    position: absolute;
+    
   }
 
 
-  label select :focus-within>option,
-  label select :hover>option{
+  .section .Actualización #disponibles:focus-within>.dias,
+  .section .Actualización #disponibles:hover>.dias{
     display: initial;
 }
   
   
-  
+#fecha-evento{
+  background-color: white;
+  width: 80%;
+  color: #000000;
+  border: solid 1px black;
+  border-radius: 0%;
+}
   
   /* Estilo de los botones */
-  .btn {
+  .btnprimary {
     border: none;
     color: white;
     padding: 14px 28px;
@@ -190,6 +217,7 @@
     border-radius: 5px;
     display: inline-block;
     margin: 5px;
+    background-color:#584037
   }
   
   /* Estilo para el botón primario */
@@ -209,36 +237,56 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el calendario */
   }
+
+.contfor{
+  width: 78.2%;
+  height:auto;
+  position:absolute;
+  left:215px ;
+  background-color:white;
+  display: flex;
+  margin-top: 50px;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+}
+
   /* From Uiverse.io by guilhermeyohan */ 
   .form {
-    background-color: #fff;
-    position: relative;
-    width: 87%; /* Ocupa todo el ancho disponible */
-    height: 100%;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px auto;
-    margin-left: 180px; /* Margen para evitar solaparse con el menú lateral */
-  }
-  
-  .lb {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .infos[type="text"], input[type="email"], input[type="date"] {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
     padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
-    background-color:#584037;
-    color: white;
+    width: 50%;
+    border: #000000 solid 1px;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220628/pngtree-complex-tech-background-with-molecules-and-data-connection-form-design-photo-image_37390678.jpg);
+     
   }
-  
+
+  .contfor .form label:focus-within>#dias,
+  .contfor .form label:hover>#dias{
+    display: initial;
+}
+
+.contfor .form label:focus-within>#dias-sema,
+.contfor .form label:hover>#dias-semana{
+  display: initial;
+}
+
+#dias-semana{
+  display: none;
+  position: absolute;
+}
+
+#dias{
+  display: none;
+  position: absolute;
+}
+
+.form label{
+  padding: 5px;
+}
+
   #send {
     --glow-color: #74615c;
     --glow-spread-color: #866d65;

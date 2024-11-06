@@ -16,16 +16,17 @@
     <h1 class="titulo_de_la_pagina">Gestión de Horario</h1>
 </header>
 
-<!-- Contenedor Padre -->
-<div class="container_padre">
+
+
 
     <!-- Menú lateral -->
     <div class="menulateral">
-        <nav>
+        <nav class="nav">
         <ul>
-            <li><i class="fa-solid fa-chart-pie"></i> Dashboard</li>
-            <li><i class="fa-solid fa-users"></i> Empleado</li>
-            <li><i class="fa-solid fa-calendar-days"></i> asignacion de tareas</li>
+            <li><a href="index.html">Pagina de inicio</a></li>
+            <li><i class="fa-solid fa-chart-pie"></i> <a href="panel.html">panel</a> </li>
+            <li><i class="fa-solid fa-users"></i> <a href="empelados.html"> Empleados</a></li>
+            <li><i class="fa-solid fa-calendar-days"></i> <a href="asignacion.html"> asignacion de tareas</a></li>
             <li class="inicio"> Inicio de jornada  
                 <div class="desplegable"> 
                 <section class="tiempo">
@@ -62,6 +63,7 @@
         <h1 class="titulo_de_la_pagina">Actualizar Disponibilidad de Eventos</h1>
         <p>Complete los campos a continuación para actualizar su disponibilidad</p>
         <form class="Actualización" action="#" method="POST">
+
             <label for="fecha-evento">Fecha del Evento:</label>
             <input type="date" id="fecha-evento" name="fecha-evento" required>
 
@@ -71,8 +73,9 @@
             <label for="hora-fin">Hora de Finalización:</label>
             <input type="time" id="hora-fin" name="hora-fin" required>
 
-            <label for="dias-semana">Días Disponibles:</label>
-            <select id="dias-semana" name="dias-semana" multiple required>
+            <label id="disponibles" for="disponibles">Días Disponibles:
+
+            <select class="dias" name="dias" multiple required>
                 <option value="lunes">Lunes</option>
                 <option value="martes">Martes</option>
                 <option value="miercoles">Miércoles</option>
@@ -81,19 +84,25 @@
                 <option value="sabado">Sábado</option>
                 <option value="domingo">Domingo</option>
             </select>
+            </label>
+            
 
-            <button type="submit" class="btn primary">Actualizar Disponibilidad</button>
+            <button type="submit" class="btnprimary">Actualizar Disponibilidad</button>
+
+            
         </form>
     </section>
     
-</div class="asignacion">
-/* From Uiverse.io by guilhermeyohan */ 
-<form class="form">
-<label class="lb" for="nome">Name:</label>
-      <input name="nome" id="nome" type="text" class="infos">
 
-      <label for="dias-semana">Días Disponibles:</label>
-            <select id="dias-semana" name="dias-semana" multiple required>
+/* From Uiverse.io by guilhermeyohan */ 
+<div class="contfor" >
+
+<form class="form">
+      <label  for="nome">Nombre:</label>
+      <input name="nome" id="nome" type="text" >
+
+      <label for="dias">Días Disponibles: 
+            <select id="dias" name="dias" multiple required>
                 <option value="lunes">Lunes</option>
                 <option value="martes">Martes</option>
                 <option value="miercoles">Miércoles</option>
@@ -101,22 +110,25 @@
                 <option value="viernes">Viernes</option>
                 <option value="sabado">Sábado</option>
                 <option value="domingo">Domingo</option>
-            </select>
-            <label for="dias-semana">tareas disponibles</label>
+            </select>  
+      </label>
+
+            <label for="dias-semana">tareas disponibles
             <select id="dias-semana" name="dias-semana" multiple required>
                 <option value="lunes">html</option>
                 <option value="martes">css</option>
                 <option value="miercoles">java</option>
                 <option value="jueves">javascript</option>
-                <option value="viernes">next.js</option>
-                
+                <option value="viernes">next.js</option>    
             </select>
-      <label for="data" class="lb">Date:</label>
-      <input name="data" id="data" type="date" class="infos">
+            </label>
+            
+      <label for="data" >Date:</label>
+      <input name="data" id="data" type="date">
 
-      <button id="send" type="submit">Send</button>
+      <button id="send" type="submit">Enviar</button>
      
     </form>
-
+</div>
 </body>
 </html>
