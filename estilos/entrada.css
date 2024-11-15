@@ -2,7 +2,7 @@
     margin: auto;
     text-align: center;
     width: 360px;
-    background-color: aqua;
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg)
     
     
 }
@@ -60,7 +60,3 @@ div nav ul .inicio:hover>.desplegable{
 
 }
 
-.icon{
-    width: 30px;
-    
-}
