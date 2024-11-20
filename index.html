@@ -12,22 +12,14 @@
     
  <!-- Encabezado -->
  <header class="header">
+    
+   <div class="menu">
     <img class="logo" src="imagenes/C.png" alt="logo">
-    <h1 class="titulo_de_la_pagina">Gestión de Horario</h1>
-</header>
-
-
-
-
-    <!-- Menú lateral -->
-    <div class="menulateral">
         <nav class="nav">
+            
         <ul>
-            <li><a href="index.html">Pagina principal</a></li>
-            <li><i class="fa-solid fa-chart-pie"></i> <a href="panel.html">panel</a> </li>
-            <li><i class="fa-solid fa-users"></i> <a href="empelados.html"> Empleados</a></li>
-            <li><i class="fa-solid fa-calendar-days"></i> <a href="contactanos.html"> Contactanos</a></li>
-            <li class="inicio"> Inicio de jornada  
+
+            <li> Inicio de jornada  
                 <div class="desplegable"> 
                 <section class="tiempo">
             <h1 class="head">Inicio del trabajador</h1>
@@ -38,7 +30,7 @@
             <input class="boton" type="submit" name="incio" id="inicio" value="inicio">
         </section>
         </div>  </li>
-        <li class="salida">Salida de jornada
+        <li>Salida de jornada
             <div class="desplegabl">   
                 <section class="tiemp">
                     <h1 class="head">Salida del trabajador</h1>
@@ -49,19 +41,11 @@
                     <input class="boto" type="submit" name="salida" id="salida" value="Salida">
                 </section>
                 </div>
-             </li>
-         
-
-        </ul>
-       </nav>
-    </div>
-
-   
-
-    <!-- Sección principal -->
-    <section class="section">
-        <h1 class="titulo_de_la_pagina">Actualizar Disponibilidad de Eventos</h1>
-        <p>Complete los campos a continuación para actualizar su disponibilidad</p>
+            </li>
+            <li><a href="index.html">Pagina principal</a>
+                <ul>
+                    <li>disponibilidad
+        <section class="section">
         <form class="Actualización" action="#" method="POST">
 
             <label for="fecha-evento">Fecha del Evento:</label>
@@ -85,16 +69,11 @@
                 <option value="domingo">Domingo</option>
             </select>
             </label>
-            
-
-            <button type="submit" class="btnprimary">Actualizar Disponibilidad</button>
-
-            
+            <button type="submit" class="btnprimary">Actualizar Disponibilidad</button>    
         </form>
     </section>
-    
-
-
+                    </li>
+    <li>Actualizacion de dia
 <div class="contfor" >
 
 <form class="form">
@@ -130,6 +109,36 @@
      
     </form>
 </div>
+                    </li>
+                </ul>
+
+            </li>
+            <li><i class="fa-solid fa-users"></i> <a href="empelados.html"> Empleados</a></li>
+            <li><i class="fa-solid fa-calendar-days"></i> <a href="contactanos.html"> Contactanos</a></li>
+
+        </ul>
+       </nav>
+    </div>
+</header>
+  
+<div class="titulo">
+<h1 class="titulo_de_la_pagina">Gestión de Horario</h1>
+</div>
+
+<div class="intro">
+    <h1 >INTRODUCCION</h1>
+    <p>En el entorno empresarial actual, donde la flexibilidad en los horarios de trabajo se ha convertido en una característica clave para muchas organizaciones, la gestión eficiente de estos horarios es fundamental. Sin embargo, cuando no se dispone de un sistema centralizado, el manejo de los horarios laborales puede convertirse en un proceso complejo y propenso a errores. Este es el caso del administrador de una empresa que, debido a la falta de una herramienta adecuada, enfrenta serias dificultades para registrar y gestionar los horarios de trabajo de sus empleados. 
+    </p>
+
+    <h1>Planteamiento del Proyecto</h1>
+    <p>El administrador de una empresa con horarios flexibles se enfrenta a un reto considerable: gestionar de manera eficiente los horarios de trabajo sin un sistema centralizado. Aunque las hojas de cálculo han sido una herramienta útil, su uso manual presenta limitaciones significativas. La complejidad de los horarios flexibles aumenta el riesgo de errores en el registro de horas trabajadas y horas extra, lo que puede llevar a discrepancias en la compensación y a una planificación ineficaz de los turnos. Estos problemas no solo generan frustración entre los empleados, sino que también afectan la productividad general de la empresa. La situación subraya la necesidad de implementar una solución automatizada que permita centralizar y optimizar la gestión de horarios, mejorando la precisión y facilitando la administración diaria. </p>
+</div>
+
+
+    
+
+
+
 
 </body>
 </html>

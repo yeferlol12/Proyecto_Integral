@@ -7,47 +7,122 @@
     <link rel="stylesheet" href="estilos/contactanos.css">
 </head>
 <body>
-    <header class="header">
-        <img class="logo" src="imagenes/C.png" alt="logo">
-        <h1 class="titulo_de_la_pagina">Contáctenos</h1>
-    </header>
 
-    <div class="menulateral">
-        <nav class="nav">
-        <ul>
-            <li><a href="index.html">pagina principal</a></li>
-            <li><i class="fa-solid fa-chart-pie"></i> <a href="panel.html">panel</a> </li>
-            <li><i class="fa-solid fa-users"></i> <a href="empelados.html"> Empleados</a></li>
-            <li><i class="fa-solid fa-calendar-days"></i> <a href="contactanos.html"> Contáctenos</a></li>
-             <li class="inicio"> Inicio de jornada  
-                <div class="desplegable"> 
-                <section class="tiempo">
-            <h1 class="head">Inicio del trabajador</h1>
-            <div class="time" style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"
-                 href="https://www.zeitverschiebung.net/es/country/co"><span style="color:rgb(250, 246, 246);"></span><br 
-                 /></a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
-                 width="100%" height="115" frameborder="0" seamless></iframe> </div>
-            <input class="boton" type="submit" name="incio" id="inicio" value="inicio">
-        </section>
-        </div>  </li>
-        <li class="salida">Salida de jornada
-            <div class="desplegabl">   
-                <section class="tiemp">
-                    <h1 class="head">Salida del trabajador</h1>
-                    <div class="tim" style="text-align:center;padding-top:1px 0; "> <h3><a style="text-decoration:none; "
-                         href="https://www.zeitverschiebung.net/es/country/co"><span style="color:rgb(245, 242, 242);"></span><br 
-                         /></a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
-                         width="100%" height="115" frameborder="0" seamless></iframe> </div>
-                    <input class="boto" type="submit" name="salida" id="salida" value="Salida">
-                </section>
-                </div>
-             </li>
-        </ul>
-       </nav>
-    </div>
-<div class="tex">
-    <h1 class="titulo_de_la_pagina">Por este lugar te puedes comunicar con nosotros</h1>
-</div>
+    <header class="header">
+    
+        <div class="menu">
+         <img class="logo" src="imagenes/C.png" alt="logo">
+             <nav class="nav">
+                 
+             <ul>
+     
+                 <li> Inicio de jornada  
+                     <div class="desplegable"> 
+                     <section class="tiempo">
+                 <h1 class="head">Inicio del trabajador</h1>
+                 <div class="time" style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"
+                      href="https://www.zeitverschiebung.net/es/country/co"><span style="color:rgb(250, 246, 246);"></span><br 
+                      /></a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
+                      width="100%" height="115" frameborder="0" seamless></iframe> </div>
+                 <input class="boton" type="submit" name="incio" id="inicio" value="inicio">
+             </section>
+             </div>  </li>
+             <li>Salida de jornada
+                 <div class="desplegabl">   
+                     <section class="tiemp">
+                         <h1 class="head">Salida del trabajador</h1>
+                         <div class="tim" style="text-align:center;padding-top:1px 0; "> <h3><a style="text-decoration:none; "
+                              href="https://www.zeitverschiebung.net/es/country/co"><span style="color:rgb(245, 242, 242);"></span><br 
+                              /></a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
+                              width="100%" height="115" frameborder="0" seamless></iframe> </div>
+                         <input class="boto" type="submit" name="salida" id="salida" value="Salida">
+                     </section>
+                     </div>
+                 </li>
+                 <li><a href="index.html">Pagina principal</a>
+                     <ul>
+                         <li>disponibilidad
+             <section class="section">
+             <form class="Actualización" action="#" method="POST">
+     
+                 <label for="fecha-evento">Fecha del Evento:</label>
+                 <input type="date" id="fecha-evento" name="fecha-evento" required>
+     
+                 <label for="hora-inicio">Hora de Inicio:</label>
+                 <input type="time" id="hora-inicio" name="hora-inicio" required>
+     
+                 <label for="hora-fin">Hora de Finalización:</label>
+                 <input type="time" id="hora-fin" name="hora-fin" required>
+     
+                 <label id="disponibles" for="disponibles">Días Disponibles:
+     
+                 <select class="dias" name="dias" multiple required>
+                     <option value="lunes">Lunes</option>
+                     <option value="martes">Martes</option>
+                     <option value="miercoles">Miércoles</option>
+                     <option value="jueves">Jueves</option>
+                     <option value="viernes">Viernes</option>
+                     <option value="sabado">Sábado</option>
+                     <option value="domingo">Domingo</option>
+                 </select>
+                 </label>
+                 <button type="submit" class="btnprimary">Actualizar Disponibilidad</button>    
+             </form>
+         </section>
+                         </li>
+         <li>Actualizacion de dia
+     <div class="contfor" >
+     
+     <form class="form">
+           <label  for="nome">Nombre:</label>
+           <input name="nome" id="nome" type="text" >
+     
+           <label for="dias">Días Disponibles: 
+                 <select id="dias" name="dias" multiple required>
+                     <option value="lunes">Lunes</option>
+                     <option value="martes">Martes</option>
+                     <option value="miercoles">Miércoles</option>
+                     <option value="jueves">Jueves</option>
+                     <option value="viernes">Viernes</option>
+                     <option value="sabado">Sábado</option>
+                     <option value="domingo">Domingo</option>
+                 </select>  
+           </label>
+     
+                 <label for="dias-semana">tareas disponibles
+                 <select id="dias-semana" name="dias-semana" multiple required>
+                     <option value="lunes">html</option>
+                     <option value="martes">css</option>
+                     <option value="miercoles">java</option>
+                     <option value="jueves">javascript</option>
+                     <option value="viernes">next.js</option>    
+                 </select>
+                 </label>
+                 
+           <label for="data" >Date:</label>
+           <input name="data" id="data" type="date">
+     
+           <button class="boton2" type="submit">Enviar</button>
+          
+         </form>
+     </div>
+                         </li>
+                     </ul>
+     
+                 </li>
+                 <li><i class="fa-solid fa-users"></i> <a href="empelados.html"> Empleados</a></li>
+                 <li><i class="fa-solid fa-calendar-days"></i> <a href="contactanos.html"> Contactanos</a></li>
+     
+             </ul>
+            </nav>
+         </div>
+     </header>
+     
+     
+         
+     <div class="titulo">
+     <h1 class="titulo_de_la_pagina">comunicate con nosotros</h1>
+     </div>
 
 </body>
 </html>

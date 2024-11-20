@@ -1,51 +1,35 @@
 .tiempo{
     margin: auto;
-    text-align: center;
     width: 360px;
-    background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg)
-    
-    
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .desplegable{
 width: 250px;
-display: flex;
-flex-direction: column;
-display: flex;
-padding: 15px;
-position:absolute;
-left:100px ;
+position: absolute;
 display: none; 
-
-
+top: 70px;
+color: black;
 }
 
-div nav ul .inicio:focus-within>.desplegable,
-div nav ul .inicio:hover>.desplegable{
+div nav ul li:focus-within>.desplegable,
+div nav ul li:hover>.desplegable{
     display: initial;
 }
 
 
 .time{
-    padding: 10px;
-    width: 250px;
-    font-size: 17px;
-    color: #000;
-    position: relative;
-    left: 40px;     
+width: 250px;
+font-size: 17px; 
 }
 
 .desplegable p {
-   
     font-size: 20px;
-    color:rgb(247, 250, 247) ;
     margin: 0%;
     padding: 0%;
-    display: flex;
-    
-    
-    
-
 }
 
 .boton{
@@ -55,8 +39,6 @@ div nav ul .inicio:hover>.desplegable{
     font-size: 15px;
     background-color: rgb(17, 187, 17);
     color: #f7f7f7;
-    
-
-
+    font-size: 20px;
 }
 

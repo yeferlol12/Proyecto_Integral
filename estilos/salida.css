@@ -1,29 +1,24 @@
 .tiemp{
     margin: auto;
-    text-align: center;
     width: 360px;
     background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
-    color: white;
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .desplegabl{
-width: 250px;
-display: flex;
-flex-direction: column;
-display: flex;
-padding: 15px;
-position:absolute;
-left:100px ;
-display: none; 
-color: white;
+    width: 250px;
+    position: absolute;
+    display: none; 
+    top: 70px;
+    color: black;
 
 
 }
 
-div nav ul .salida:focus-within>.desplegabl,
-div nav ul .salida:hover>.desplegabl{
+div nav ul li:focus-within>.desplegabl,
+div nav ul li:hover>.desplegabl{
     display: initial;
 }
 
@@ -32,9 +27,7 @@ div nav ul .salida:hover>.desplegabl{
     padding: 10px;
     width: 250px;
     font-size: 17px;
-    color: #ffffff;
-    position: relative;
-    left: 40px;     
+    color: #ffffff;   
 }
 
 
@@ -43,7 +36,7 @@ div nav ul .salida:hover>.desplegabl{
     margin-top: 10px;
     padding: 10px;
     width: 100px;
-    font-size: 15px;
+    font-size: 20px;
     background-color: rgb(250, 2, 2);
     color: #f7f7f7;
 }

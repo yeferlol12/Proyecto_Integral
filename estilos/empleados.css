@@ -1,244 +1,405 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
+
 
 /* Estilo general del cuerpo */
 body {
   font-family: Arial, sans-serif;
-  background-image:  url(https://images.unsplash.com/photo-1663970206579-c157cba7edda?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwcGFyYSUyMHBjfGVufDB8fDB8fHww );
-width: auto;
-height: auto;
-  padding: 10px;
-  margin: 5px;
-  
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: #021c1e;
 }
 
-/* Estilo de la clase logo */
-.logo{
+/* Estilos del encabezado */
+.header {
+  width: 100%;
+  /* Ocupa el 100% del ancho */
+  height: 100%;
+  /* Altura del header */
+  color: white;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Menú lateral */
+.menu {
+  width: auto;
+  height: auto;
+  /* Ocupa toda la altura disponible */
+  color: rgb(255, 253, 253);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  background-color: #4A322A;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li {
+  cursor: pointer;
+  transition: all 300ms ease-in;
+  padding: 10px;
+
+}
+
+.nav ul li:hover {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-ray-blue-background-image_2344464.jpg);
+  border: solid 1px rgb(252, 251, 251);
+  color: white;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav ul li a :hover {
+  color: white;
+}
+
+.nav ul li ul {
+position: absolute;
+display: block;
+top: 80px;
+right: 200px;
+display: none;
+}
+
+
+.nav ul li ul .section{
+  position: absolute;
+  display: none;
+  background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);          
+}
+
+.nav ul li ul .contfor{
+  position: absolute;
+  display: none;
+  background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
+}
+
+
+.header .nav ul li:focus-within>ul,
+.header .nav ul li:hover>ul {
+  display: initial;
+}
+
+.header .nav ul li:focus-within>.section,
+.header .nav ul li:hover>.section {
+  display: initial;
+}
+
+.header .nav ul li:focus-within>.contfor,
+.header .nav ul li:hover>.contfor{
+  display: initial;
+}
+
+.logo {
   width: 100px;
   height: auto;
-  right:550px ;
-  position: relative;
-  padding-top: 20px;
-  background-color:transparent ;
+  padding: 10px;
 }
 
-.header {
-  width: 100%; /* Ocupa el 100% del ancho */
-  height: 60px; /* Altura del header */
+/* Sección principal */
+.section {
+width: 500px;
+height: auto;
+right: 180px;
+}
+
+
+
+/* Estilo para la sección de actualización */
+.Actualización {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+  /* Coloca los elementos en una columna */
+  gap: 1px;
+  /* Espacio entre los elementos */
+  padding: 15px;
+}
+
+/* Estilo para los labels */
+.Actualización label {
+  font-size: 14px;
+  margin-bottom: 2px;
+  border: solid rgb(0, 0, 0) 1px;
+  width: 80%;
+  padding: 15px;
+  font-size: 18px;
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+/* Estilo para los campos de input y select */
+.Actualización input {
+  padding: 15px;
+  font-size: 16px;
+  width: 80%;
+ border: solid 1px black;
+}
+
+.dias {
+  display: none;
+  position: absolute;
+
+}
+.section .Actualización #disponibles:focus-within>.dias,
+.section .Actualización #disponibles:hover>.dias{
+  display: initial;
+}
+
+/* Estilo de los botones */
+.btnprimary {
+  border: none;
   color: white;
-  display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  position: relative;
-  left: 0;
-  z-index: 1000; /* Asegura que el header esté siempre encima */
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  background-color: #5e3f34a6;
+  font-size: 20px;
 }
 
-.titulo_de_la_pagina {
-  animation: animar-texto 7s ease-in-out infinite; /* Animación infinita */
-  font-size: 60px;
+.btnprimary:hover {
+  color: white;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/831/146/small/banner-web-template-abstract-blue-and-golden-wave-curved-lines-overlapping-layer-design-on-dark-blue-background-luxury-style-vector.jpg);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+
+/* Estilo para el botón primario */
+.primary {
+  background-image: linear-gradient(to right, #4A322A, #EBCCC8);
+}
+
+.contfor {
+  width: 500px;
+  height: auto;
+  right: 180px;
+}
+
+/* From Uiverse.io by guilhermeyohan */
+.form {
+  display: flex;
+  flex-direction: column;
+  /* Coloca los elementos en una columna */
+  align-items: center;
+  gap: 1px;
+  /* Espacio entre los elementos */
+  width: 100%;
+}
+
+.form label {
+  font-size: 14px;
+  margin-bottom: 2px;
+  border: solid rgb(0, 0, 0) 1px;
+  width: 80%;
+  padding: 15px;
+  font-size: 18px;
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.form input {
+  padding: 15px;
+  font-size: 16px;
+  width: 80%;
+  color: black;
+  border: 1px solid black;
+}
+
+#nome {
+  width: 80%;
+
+}
+
+.contfor .form label:focus-within>#dias,
+.contfor .form label:hover>#dias {
+  display: initial;
+}
+
+.contfor .form label:focus-within>#dias-sema,
+.contfor .form label:hover>#dias-semana {
+  display: initial;
+}
+
+#dias-semana {
+  display: none;
+  position: absolute;
+  font-size: 16px;
+}
+
+#dias {
+  display: none;
+  position: absolute;
+  font-size: 16px;
+}
+
+
+
+#data {
+  padding: 15px;
+  width: 80%;
+  margin-top: 15px;
+}
+
+
+
+.boton2 {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  background-color: #5e3f34a6;
+  font-size: 20px;
+  width: 50%;
   text-align: center;
+}
+
+
+.boton2:hover {
+  color: white;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/831/146/small/banner-web-template-abstract-blue-and-golden-wave-curved-lines-overlapping-layer-design-on-dark-blue-background-luxury-style-vector.jpg);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 140px;
+  position: relative;
+
+}
+
+/* Estilos del título animado de la página */
+.titulo_de_la_pagina {
+  animation: animar-texto 7s ease-in-out infinite;
+  /* Animación infinita */
+  font-size: 60px;
   color: transparent;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-iQPWNssZFBbTQF3IRHWVYQuhXI-Fl881dg&s); /* Imagen de fondo para el texto */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtY5COhUrh2H0ukjK1CknQOic6LrHmuk3vwg&s);
+  /* Imagen de fondo para el texto */
   text-transform: uppercase;
-  letter-spacing: 5px; /* Espaciado entre letras */
+  letter-spacing: 5px;
+  /* Espaciado entre letras */
 }
 
-
+/* Animación del texto */
 @keyframes animar-texto {
   0% {
     background-position: left top;
   }
+
   25% {
     background-position: right bottom;
   }
+
   50% {
     background-position: left bottom;
   }
+
   75% {
     background-position: right top;
   }
+
   100% {
     background-position: left bottom;
   }
 }
 
-
-
-.header {
-  width: 100%; /* Ocupa el 100% del ancho */
-  height: 60px; /* Altura del header */
-  color: white;
+.tiempo{
+  margin: auto;
+  width: 360px;
+  background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
   display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  position: relative;
-  left: 0;
-  z-index: 1000; /* Asegura que el header esté siempre encima */
-}
-
-.nav{
-
-  position: fixed;
-  top: 200px;
-}
-  
-  /* Menú lateral */
-  .menulateral {
-    width: 100px; /* Fijar el ancho del menú lateral */
-    height: 100%; /* Ocupa toda la altura disponible */
-    color: rgb(255, 253, 253);
-    position: absolute; /* Fijado en la parte izquierda */
-    z-index: 1000;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-  }
-
-  
-
-  .menulateral a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    
-  }
-
-
-  .menulateral a :hover{
-    color: white;
-  }
-    
-  li {
-    padding-top:20px ;
-    display: flex;
-    cursor: pointer;
-    transition: all 300ms ease-in; /* Transición suave al hacer hover */
-    width: auto;
-    text-align: center;
-  }
-  
-  /* Efecto hover en los elementos de la lista */
-  li:hover {
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-ray-blue-background-image_2344464.jpg);
-    border: solid 1px rgb(252, 251, 251);
-    color: white;
-  }
-
-  .tex{
-    top: 40px;
-    position: relative;
-    width: 80%; /* Ocupa todo el ancho disponible */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    left: 200px;
-  }
-
-  h1 {
-    color: #ffffff; /* Color gris */
-    font-size: 22px;
-    margin-bottom: 5px;
-    text-align: center;
-    margin-top: 70px;
-  
-  }
-
-  .tiempo{
-    margin: auto;
-    text-align: center;
-    width: 360px;
-    background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg)
-    
-    
+  flex-direction: column;
+  align-items: center;
 }
 
 .desplegable{
 width: 250px;
-display: flex;
-flex-direction: column;
-display: flex;
-padding: 15px;
-position:absolute;
-left:100px ;
+position: absolute;
 display: none; 
-
-
+top: 70px;
+color: black;
 }
 
-div nav ul .inicio:focus-within>.desplegable,
-div nav ul .inicio:hover>.desplegable{
-    display: initial;
+div nav ul li:focus-within>.desplegable,
+div nav ul li:hover>.desplegable{
+  display: initial;
 }
 
 
 .time{
-    padding: 10px;
-    width: 250px;
-    font-size: 17px;
-    color: #000;
-    position: relative;
-    left: 40px;     
+width: 250px;
+font-size: 17px; 
 }
 
 .desplegable p {
-   
-    font-size: 20px;
-    color:rgb(247, 250, 247) ;
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    
-    
-    
-
+  font-size: 20px;
+  margin: 0%;
+  padding: 0%;
 }
 
 .boton{
-    margin-top: 10px;
-    padding: 10px;
-    width: 100px;
-    font-size: 15px;
-    background-color: rgb(17, 187, 17);
-    color: #f7f7f7;
-    
-
-
+  margin-top: 10px;
+  padding: 10px;
+  width: 100px;
+  font-size: 15px;
+  background-color: rgb(17, 187, 17);
+  color: #f7f7f7;
+  font-size: 20px;
 }
-  
 
 .tiemp{
   margin: auto;
-  text-align: center;
   width: 360px;
   background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
-  color: white;
-  
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .desplegabl{
-width: 250px;
-display: flex;
-flex-direction: column;
-display: flex;
-padding: 15px;
-position:absolute;
-left:100px ;
-display: none; 
-color: white;
+  width: 250px;
+  position: absolute;
+  display: none; 
+  top: 70px;
+  color: black;
 
 
 }
 
-div nav ul .salida:focus-within>.desplegabl,
-div nav ul .salida:hover>.desplegabl{
+div nav ul li:focus-within>.desplegabl,
+div nav ul li:hover>.desplegabl{
   display: initial;
 }
 
@@ -247,9 +408,7 @@ div nav ul .salida:hover>.desplegabl{
   padding: 10px;
   width: 250px;
   font-size: 17px;
-  color: #ffffff;
-  position: relative;
-  left: 40px;     
+  color: #ffffff;   
 }
 
 
@@ -258,9 +417,36 @@ div nav ul .salida:hover>.desplegabl{
   margin-top: 10px;
   padding: 10px;
   width: 100px;
-  font-size: 15px;
+  font-size: 20px;
   background-color: rgb(250, 2, 2);
   color: #f7f7f7;
+}
+
+.slaider{
+  width: 1280px;
+  height: auto;
+  position: relative;
+  margin: 50px auto 0;
+  overflow: hidden;
+
+
+  animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slaider ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+}
+
+.slaider li{
+  list-style: none;
+  width: 100%;
+}
+
+.slaider img{
+  width: 100%;
+  height: 80%;
 }
 
 
