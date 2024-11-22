@@ -12,6 +12,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   background-color: #021c1e;
+  background-image: url(https://i.pinimg.com/736x/43/9e/07/439e0745fd00e29a1f6a4d10b41d425e.jpg) ;
 }
 
 /* Estilos del encabezado */
@@ -35,7 +36,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
-  background-color: #4A322A;
+  background-color: #61544bb2;
 }
 
 .nav {
@@ -48,6 +49,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
+  color: rgb(207, 133, 149);
 }
 
 .nav ul li {
@@ -59,13 +61,12 @@ body {
 
 .nav ul li:hover {
   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-ray-blue-background-image_2344464.jpg);
-  border: solid 1px rgb(252, 251, 251);
   color: white;
 }
 
 .nav ul li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(207, 133, 149);
 }
 
 .nav ul li a :hover {
@@ -75,7 +76,7 @@ body {
 .nav ul li ul {
 position: absolute;
 display: block;
-top: 80px;
+top: 70px;
 right: 200px;
 display: none;
 }
@@ -110,7 +111,7 @@ display: none;
 }
 
 .logo {
-  width: 100px;
+  width: 200px;
   height: auto;
   padding: 10px;
 }
@@ -306,7 +307,7 @@ align-items: center;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtY5COhUrh2H0ukjK1CknQOic6LrHmuk3vwg&s);
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-pastel-acuarela-abstracta_87374-122.jpg);
   /* Imagen de fondo para el texto */
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -336,25 +337,48 @@ align-items: center;
   }
 }
 
-.intro{
-  width: auto;
-  height: auto;
-  position: relative;
-  background-color: red;
-  top: 200px;
+.contenidoPP {
+  position: relative ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.intro h1{
+.contenidoPP h1{
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 
-.intro  p{
+.contenidoPP  p{
   text-align: center;
   font-size: 20px;
   padding: 10px;
 }
 
 .intro {
+  background-color: rgba(24, 58, 90, 0.562);
+  width: 400px; 
+  /* margin para definir la margen exterior de las tarjetas */
+  margin: 10px; 
+  /* en border se define el tipo, el grosor y el color del borde de las targetas */
+  border: 1px solid #ccc; 
+  /* padding para el espaciado entre la margen y el contenido */
+  padding: 20px; 
+  /* el atributo border-radius define el el borde en las esquinas con un estilo circular */
+  border-radius: 5px;
+  color: white;
+}
+.plant {
   background-color: rgba(24, 67, 107, 0.562);
+  width: 400px; 
+  /* margin para definir la margen exterior de las tarjetas */
+  margin: 10px; 
+  /* en border se define el tipo, el grosor y el color del borde de las targetas */
+  border: 1px solid #ccc; 
+  /* padding para el espaciado entre la margen y el contenido */
+  padding: 20px; 
+  /* el atributo border-radius define el el borde en las esquinas con un estilo circular */
+  border-radius: 5px;
+  color: white;
 }
