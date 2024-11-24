@@ -420,3 +420,9 @@ div nav ul li:hover>.desplegabl{
   background-color: rgb(250, 2, 2);
   color: #f7f7f7;
 }
+
+.ubicacion{
+  position: relative;
+  top: 200px;
+left: 50px;
+}
