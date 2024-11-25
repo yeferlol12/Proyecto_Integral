@@ -5,17 +5,53 @@ body{
 
 .formulario{
     width: 600px;
-    background-color: black;
-margin-top: 250px;
+    background-color:#000000bd;
+margin-top: 150px;
+}
+
+.formulario label{
+    color: white;
+    padding-top: 5px;
 }
 
 
 
 .titulo{
-    position: absolute;
-    left: 750px;
-    color: rgb(0, 0, 0);
-    top: 180px;
-    font-size: 40px;
+    position: relative;
+    text-align: center;
+     color: rgb(0, 0, 0);
+     font-size: 40px;
+     animation: animar-texto 7s ease-in-out infinite;
+     /* Animación infinita */
+     font-size: 50px;
+     color: transparent;
+     background-size: cover;
+     background-clip: text;
+     -webkit-background-clip: text;
+     background-image: url(../imagenes/texto.avif);
+     /* Imagen de fondo para el texto */
+     text-transform: uppercase;
+     letter-spacing: 5px;
 }
 
+@keyframes animar-texto {
+    0% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+
+    100% {
+        background-position: left bottom;
+    }
+}

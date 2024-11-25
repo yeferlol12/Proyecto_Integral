@@ -11,6 +11,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   background-color: #021c1e;
+  background-image: url(../imagenes/fondo-total.avif) ;
 }
 
 /* Estilos del encabezado */
@@ -34,6 +35,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
+  background-color: #61544bb2;
 }
 
 .nav {
@@ -46,6 +48,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
+  color: rgb(207, 133, 149);
 }
 
 .nav ul li {
@@ -63,7 +66,7 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(207, 133, 149);
 }
 
 .nav ul li a :hover {
@@ -304,7 +307,7 @@ align-items: center;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtY5COhUrh2H0ukjK1CknQOic6LrHmuk3vwg&s);
+  background-image: url(../imagenes/texto.avif);
   /* Imagen de fondo para el texto */
   text-transform: uppercase;
   letter-spacing: 5px;

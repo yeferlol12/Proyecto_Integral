@@ -12,7 +12,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   background-color: #021c1e;
-  background-image: url(https://i.pinimg.com/736x/43/9e/07/439e0745fd00e29a1f6a4d10b41d425e.jpg) ;
+  background-image: url(../imagenes/fondo-total.avif) ;
 }
 
 /* Estilos del encabezado */
@@ -307,7 +307,7 @@ align-items: center;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url(https://img.freepik.com/vector-gratis/fondo-pastel-acuarela-abstracta_87374-122.jpg);
+  background-image: url(../imagenes/texto.avif);
   /* Imagen de fondo para el texto */
   text-transform: uppercase;
   letter-spacing: 5px;
