@@ -11,7 +11,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   background-color: #021c1e;
-  background-image: url(../imagenes/fondo-total.avif) ;
+  background-image: url(../imagenes/fondo-total.avif);
 }
 
 /* Estilos del encabezado */
@@ -74,21 +74,21 @@ body {
 }
 
 .nav ul li ul {
-position: absolute;
-display: block;
-top: 80px;
-right: 200px;
-display: none;
+  position: absolute;
+  display: block;
+  top: 80px;
+  right: 200px;
+  display: none;
 }
 
 
-.nav ul li ul .section{
+.nav ul li ul .section {
   position: absolute;
   display: none;
-  background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);          
+  background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
 }
 
-.nav ul li ul .contfor{
+.nav ul li ul .contfor {
   position: absolute;
   display: none;
   background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
@@ -106,7 +106,7 @@ display: none;
 }
 
 .header .nav ul li:focus-within>.contfor,
-.header .nav ul li:hover>.contfor{
+.header .nav ul li:hover>.contfor {
   display: initial;
 }
 
@@ -118,19 +118,19 @@ display: none;
 
 /* Sección principal */
 .section {
-width: 500px;
-height: auto;
-right: 180px;
+  width: 500px;
+  height: auto;
+  right: 180px;
 }
 
 
 
 /* Estilo para la sección de actualización */
 .Actualización {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   /* Coloca los elementos en una columna */
   gap: 1px;
   /* Espacio entre los elementos */
@@ -154,7 +154,7 @@ align-items: center;
   padding: 15px;
   font-size: 16px;
   width: 80%;
- border: solid 1px black;
+  border: solid 1px black;
 }
 
 .dias {
@@ -162,8 +162,9 @@ align-items: center;
   position: absolute;
 
 }
+
 .section .Actualización #disponibles:focus-within>.dias,
-.section .Actualización #disponibles:hover>.dias{
+.section .Actualización #disponibles:hover>.dias {
   display: initial;
 }
 
@@ -337,7 +338,7 @@ align-items: center;
   }
 }
 
-.tiempo{
+.tiempo {
   margin: auto;
   width: 360px;
   background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
@@ -346,23 +347,23 @@ align-items: center;
   align-items: center;
 }
 
-.desplegable{
-width: 250px;
-position: absolute;
-display: none; 
-top: 70px;
-color: black;
+.desplegable {
+  width: 250px;
+  position: absolute;
+  display: none;
+  top: 70px;
+  color: black;
 }
 
 div nav ul li:focus-within>.desplegable,
-div nav ul li:hover>.desplegable{
+div nav ul li:hover>.desplegable {
   display: initial;
 }
 
 
-.time{
-width: 250px;
-font-size: 17px; 
+.time {
+  width: 250px;
+  font-size: 17px;
 }
 
 .desplegable p {
@@ -371,7 +372,7 @@ font-size: 17px;
   padding: 0%;
 }
 
-.boton{
+.boton {
   margin-top: 10px;
   padding: 10px;
   width: 100px;
@@ -381,7 +382,7 @@ font-size: 17px;
   font-size: 20px;
 }
 
-.tiemp{
+.tiemp {
   margin: auto;
   width: 360px;
   background-image: url(https://img.freepik.com/fotos-premium/fondo-pantalla-digital-azul-ancho-concepto-pagina-destino_670147-35323.jpg);
@@ -390,10 +391,10 @@ font-size: 17px;
   align-items: center;
 }
 
-.desplegabl{
+.desplegabl {
   width: 250px;
   position: absolute;
-  display: none; 
+  display: none;
   top: 70px;
   color: black;
 
@@ -401,21 +402,21 @@ font-size: 17px;
 }
 
 div nav ul li:focus-within>.desplegabl,
-div nav ul li:hover>.desplegabl{
+div nav ul li:hover>.desplegabl {
   display: initial;
 }
 
 
-.tim{
+.tim {
   padding: 10px;
   width: 250px;
   font-size: 17px;
-  color: #ffffff;   
+  color: #ffffff;
 }
 
 
 
-.boto{
+.boto {
   margin-top: 10px;
   padding: 10px;
   width: 100px;
@@ -424,8 +425,18 @@ div nav ul li:hover>.desplegabl{
   color: #f7f7f7;
 }
 
-.ubicacion{
+.ubicacion {
   position: relative;
-  top: 200px;
-left: 50px;
+  top:250px;
+  left: 50px;
+  
 }
+
+.mapa {
+  position: absolute;
+  top: 300px;
+  left: 20px;
+}
+
+
+
