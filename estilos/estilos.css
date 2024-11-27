@@ -307,9 +307,11 @@ align-items: center;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url(../imagenes/texto.avif);
+  background-image: url(https://img.pikbest.com/wp/202343/ultra-hd-exquisite-texture-abstract-beige-tan-background-with-rich-brown-hues_9983982.jpg!f305cw);
   /* Imagen de fondo para el texto */
   text-transform: uppercase;
+  -webkit-text-stroke: 2px rgb(180, 137, 96); /* Para navegadores basados en WebKit (Chrome, Safari) */
+  text-stroke: 2px rgb(180, 137, 96); /* Para otros navegadores modernos */
   letter-spacing: 5px;
   /* Espaciado entre letras */
 }
@@ -357,8 +359,9 @@ align-items: center;
 }
 
 .intro {
-  background-color: rgba(24, 58, 90, 0.562);
-  width: 400px; 
+  background-image: url(https://datatex.com/wp-content/uploads/2024/04/textiles-1.jpg);
+  background-size: cover;
+  width: 600px; 
   /* margin para definir la margen exterior de las tarjetas */
   margin: 10px; 
   /* en border se define el tipo, el grosor y el color del borde de las targetas */
@@ -370,8 +373,9 @@ align-items: center;
   color: white;
 }
 .plant {
-  background-color: rgba(24, 67, 107, 0.562);
-  width: 400px; 
+  background-image: url(https://img.freepik.com/foto-gratis/tejidos-mercado_157027-4493.jpg);
+  background-size: cover;
+  width: 600px; 
   /* margin para definir la margen exterior de las tarjetas */
   margin: 10px; 
   /* en border se define el tipo, el grosor y el color del borde de las targetas */
@@ -381,4 +385,39 @@ align-items: center;
   /* el atributo border-radius define el el borde en las esquinas con un estilo circular */
   border-radius: 5px;
   color: white;
+}
+.boton-perfil{
+  background-color: transparent; /* Hace que el fondo del botón sea transparente */
+  border: none; /* Elimina el borde del botón por defecto */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+  padding: 0; /* Elimina el relleno interno del botón */
+  position: relative;
+}
+.boton-perfil img {
+  width: 70px; /* Ajusta el ancho de la imagen al tamaño del botón */
+  height: auto; /* Mantiene las proporciones de la imagen */
+}
+.boton-cierre-sesion {
+  display: none; /* Oculta el submenu por defecto */
+  position: absolute;
+  top: 100%; /* Posiciona el submenu justo debajo del botón principal */
+  left: 0;
+  background-color: #cf731c;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  background: linear-gradient(to right, #f2711c, #e94058); /* Degradado de colores */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+  color: #fff; /* Color del texto blanco */
+  text-decoration: none; /* Quita el subrayado */
+}
+.boton-perfil:hover .boton-cierre-sesion{
+  display: block;
+}
+.boton-cierre-sesion a{
+  color: #333; /* Color del texto del enlace */
+  text-decoration: none; /* Quita el subrayado */
+  display: block; /* Muestra el enlace en bloque */
+  padding: 5px; /* Espacio interno del enlace */
+  transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
 }
