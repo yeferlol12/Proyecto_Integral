@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,151 +9,173 @@
     <link rel="stylesheet" href="estilos/entrada.css">
     <link rel="stylesheet" href="estilos/salida.css">
 </head>
+
 <body>
-    
- <!-- Encabezado -->
- <header class="header">
-     
-     <div class="menu">
-         <img class="logo" src="imagenes/logo2.png" alt="logo">
-         <nav class="nav">
-             
-             <ul>
-                 
-                 <li> Inicio de jornada  
-                     <div class="desplegable"> 
-                         <section class="tiempo">
-                             <h1 class="head">Inicio de la jornada</h1>
-                             <div class="time" style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;"
-                                href="https://www.zeitverschiebung.net/es/country/co"><span style="color:rgb(250, 246, 246);"></span><br 
-                                /></a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
-                                width="100%" height="115" frameborder="0" seamless></iframe> </div>
+
+    <!-- Encabezado -->
+    <header class="header">
+
+        <div class="menu">
+            <img class="logo" src="imagenes/logo2.png" alt="logo">
+            <nav class="nav">
+
+                <ul>
+
+                    <li> Inicio de jornada
+                        <div class="desplegable">
+                            <section class="tiempo">
+                                <h1 class="head">Inicio de la jornada</h1>
+                                <div class="time" style="text-align:center;padding:1em 0;">
+                                    <h3><a style="text-decoration:none;"
+                                            href="https://www.zeitverschiebung.net/es/country/co"><span
+                                                style="color:rgb(250, 246, 246);"></span><br /></a></h3> <iframe
+                                        src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
+                                        width="100%" height="115" frameborder="0" seamless></iframe>
+                                </div>
                                 <input class="boton" type="submit" name="incio" id="inicio" value="inicio">
                             </section>
-    </div>  </li>
-        <li>Salida de jornada
-            <div class="desplegabl">   
-                <section class="tiemp">
-                    <h1 class="head">Final de la jornada</h1>
-                    <div class="tim" style="text-align:center;padding-top:1px 0; "> <h3><a style="text-decoration:none; "
-                         href="https://www.zeitverschiebung.net/es/country/co"><span style="color:rgb(245, 242, 242);"></span><br 
-                         /></a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
-                         width="100%" height="115" frameborder="0" seamless></iframe> </div>
-                    <input class="boto" type="submit" name="salida" id="salida" value="Salida">
-                </section>
-            </div>
-        </li>
-        <li><a href="principal.html">Pagina principal</a>
-        <ul>
-            <li>disponibilidad
-        <section class="section">
-        <form class="Actualización" action="#" method="POST">
-    
-            <label for="fecha-evento">Fecha del Evento:</label>
-            <input type="date" id="fecha-evento" name="fecha-evento" required>
-    
-            <label for="hora-inicio">Hora de Inicio:</label>
-            <input type="time" id="hora-inicio" name="hora-inicio" required>
-    
-            <label for="hora-fin">Hora de Finalización:</label>
-            <input type="time" id="hora-fin" name="hora-fin" required>
-    
-            <label id="disponibles" for="disponibles">Días Disponibles:
-    
-            <select class="dias" name="dias" multiple required>
-                <option value="lunes">Lunes</option>
-                <option value="martes">Martes</option>
-                <option value="miercoles">Miércoles</option>
-                <option value="jueves">Jueves</option>
-                <option value="viernes">Viernes</option>
-                <option value="sabado">Sábado</option>
-                <option value="domingo">Domingo</option>
-            </select>
-            </label>
-            <button type="submit" class="btnprimary">Actualizar Disponibilidad</button>    
-        </form>
-    </section>
+                        </div>
                     </li>
-    <li>Actualizacion de dia
-    <div class="contfor" >
-    
-    <form class="form">
-      <label  for="nome">Nombre:</label>
-      <input name="nome" id="nome" type="text" >
-    
-      <label for="dias">Días Disponibles: 
-            <select id="dias" name="dias" multiple required>
-                <option value="lunes">Lunes</option>
-                <option value="martes">Martes</option>
-                <option value="miercoles">Miércoles</option>
-                <option value="jueves">Jueves</option>
-                <option value="viernes">Viernes</option>
-                <option value="sabado">Sábado</option>
-                <option value="domingo">Domingo</option>
-            </select>  
-      </label>
-    
-            <label for="dias-semana">tareas disponibles
-            <select id="dias-semana" name="dias-semana" multiple required>
-                <option value="lunes">html</option>
-                <option value="martes">css</option>
-                <option value="miercoles">java</option>
-                <option value="jueves">javascript</option>
-                <option value="viernes">next.js</option>    
-            </select>
-            </label>
-            
-      <label for="data" >Date:</label>
-      <input name="data" id="data" type="date">
-    
-      <button class="boton2" type="submit">Enviar</button>
-     
-    </form>
-    </div>
+                    <li>Salida de jornada
+                        <div class="desplegabl">
+                            <section class="tiemp">
+                                <h1 class="head">Final de la jornada</h1>
+                                <div class="tim" style="text-align:center;padding-top:1px 0; ">
+                                    <h3><a style="text-decoration:none; "
+                                            href="https://www.zeitverschiebung.net/es/country/co"><span
+                                                style="color:rgb(245, 242, 242);"></span><br /></a></h3> <iframe
+                                        src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
+                                        width="100%" height="115" frameborder="0" seamless></iframe>
+                                </div>
+                                <input class="boto" type="submit" name="salida" id="salida" value="Salida">
+                            </section>
+                        </div>
                     </li>
+                    <li><a href="principal.html">Pagina principal</a>
+                        <ul>
+                            <li>disponibilidad
+                                <section class="section">
+                                    <form class="Actualización" action="#" method="POST">
+
+                                        <label for="fecha-evento">Fecha del Evento:</label>
+                                        <input type="date" id="fecha-evento" name="fecha-evento" required>
+
+                                        <label for="hora-inicio">Hora de Inicio:</label>
+                                        <input type="time" id="hora-inicio" name="hora-inicio" required>
+
+                                        <label for="hora-fin">Hora de Finalización:</label>
+                                        <input type="time" id="hora-fin" name="hora-fin" required>
+
+                                        <label id="disponibles" for="disponibles">Días Disponibles:
+
+                                            <select class="dias" name="dias" multiple required>
+                                                <option value="lunes">Lunes</option>
+                                                <option value="martes">Martes</option>
+                                                <option value="miercoles">Miércoles</option>
+                                                <option value="jueves">Jueves</option>
+                                                <option value="viernes">Viernes</option>
+                                                <option value="sabado">Sábado</option>
+                                                <option value="domingo">Domingo</option>
+                                            </select>
+                                        </label>
+                                        <button type="submit" class="btnprimary">Actualizar Disponibilidad</button>
+                                    </form>
+                                </section>
+                            </li>
+                            <li>Actualizacion de dia
+                                <div class="contfor">
+
+                                    <form class="form">
+                                        <label for="nome">Nombre:</label>
+                                        <input name="nome" id="nome" type="text">
+
+                                        <label for="dias">Días Disponibles:
+                                            <select id="dias" name="dias" multiple required>
+                                                <option value="lunes">Lunes</option>
+                                                <option value="martes">Martes</option>
+                                                <option value="miercoles">Miércoles</option>
+                                                <option value="jueves">Jueves</option>
+                                                <option value="viernes">Viernes</option>
+                                                <option value="sabado">Sábado</option>
+                                                <option value="domingo">Domingo</option>
+                                            </select>
+                                        </label>
+
+                                        <label for="dias-semana">tareas disponibles
+                                            <select id="dias-semana" name="dias-semana" multiple required>
+                                                <option value="lunes">html</option>
+                                                <option value="martes">css</option>
+                                                <option value="miercoles">java</option>
+                                                <option value="jueves">javascript</option>
+                                                <option value="viernes">next.js</option>
+                                            </select>
+                                        </label>
+
+                                        <label for="data">Date:</label>
+                                        <input name="data" id="data" type="date">
+
+                                        <button class="boton2" type="submit">Enviar</button>
+
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li><i class="fa-solid fa-users"></i> <a href="empelados.html"> Empleados</a></li>
+                    <li><i class="fa-solid fa-calendar-days"></i> <a href="contactanos.html"> Contactanos</a></li>
+
                 </ul>
+                <button class="boton-perfil">
+                    <img src="imagenes/person-button-svgrepo-com.svg" alt="logo perfil">
+                    <div class="boton-cierre-sesion">
+                        <a href="index.html">Cerrar Sesion</a>
+                    </div>
+                </button>
+            </nav>
+        </div>
 
-            </li>
-            <li><i class="fa-solid fa-users"></i> <a href="empelados.html"> Empleados</a></li>
-            <li><i class="fa-solid fa-calendar-days"></i> <a href="contactanos.html"> Contactanos</a></li>
+    </header>
 
-        </ul>
-        <button class="boton-perfil">
-            <img src="imagenes/person-button-svgrepo-com.svg"  alt="logo perfil">
-            <div class="boton-cierre-sesion">
-                <a href="index.html">Cerrar Sesion</a>
+    <div class="titulo">
+        <h1 class="titulo_de_la_pagina">Gestión de Horarios</h1>
+
+
+
+        <div class="contenidoPP">
+            <div class="intro">
+                <h1>INTRODUCCION</h1>
+                <p>En el entorno empresarial actual, donde la flexibilidad en los horarios de trabajo se ha convertido
+                    en una característica clave para muchas organizaciones, la gestión eficiente de estos horarios es
+                    fundamental. Sin embargo, cuando no se dispone de un sistema centralizado, el manejo de los horarios
+                    laborales puede convertirse en un proceso complejo y propenso a errores. Este es el caso del
+                    administrador de una empresa que, debido a la falta de una herramienta adecuada, enfrenta serias
+                    dificultades para registrar y gestionar los horarios de trabajo de sus empleados.
+
+                </p>
             </div>
-        </button>
-    </nav>
-    </div>
 
-</header>
-  
-<div class="titulo">
-<h1 class="titulo_de_la_pagina">Gestión de Horarios</h1>
+            <div class="plant">
+                <h1>Planteamiento del Proyecto</h1>
+                <p>El administrador de una empresa con horarios flexibles se enfrenta a un reto considerable: gestionar
+                    de manera eficiente los horarios de trabajo sin un sistema centralizado. Aunque las hojas de cálculo
+                    han sido una herramienta útil, su uso manual presenta limitaciones significativas. La complejidad de
+                    los horarios flexibles aumenta el riesgo de errores en el registro de horas trabajadas y horas
+                    extra, lo que puede llevar a discrepancias en la compensación y a una planificación ineficaz de los
+                    turnos. Estos problemas no solo generan frustración entre los empleados, sino que también afectan la
+                    productividad general de la empresa. La situación subraya la necesidad de implementar una solución
+                    automatizada que permita centralizar y optimizar la gestión de horarios, mejorando la precisión y
+                    facilitando la administración diaria. </p>
+            </div>
 
-
-
-<div class="contenidoPP">
-    <div class="intro">
-        <h1 >INTRODUCCION</h1>
-        <p>En el entorno empresarial actual, donde la flexibilidad en los horarios de trabajo se ha convertido en una característica clave para muchas organizaciones, la gestión eficiente de estos horarios es fundamental. Sin embargo, cuando no se dispone de un sistema centralizado, el manejo de los horarios laborales puede convertirse en un proceso complejo y propenso a errores. Este es el caso del administrador de una empresa que, debido a la falta de una herramienta adecuada, enfrenta serias dificultades para registrar y gestionar los horarios de trabajo de sus empleados. 
-
-        </p>
-    </div>
-    
-    <div class="plant">
-        <h1>Planteamiento del Proyecto</h1>
-        <p>El administrador de una empresa con horarios flexibles se enfrenta a un reto considerable: gestionar de manera eficiente los horarios de trabajo sin un sistema centralizado. Aunque las hojas de cálculo han sido una herramienta útil, su uso manual presenta limitaciones significativas. La complejidad de los horarios flexibles aumenta el riesgo de errores en el registro de horas trabajadas y horas extra, lo que puede llevar a discrepancias en la compensación y a una planificación ineficaz de los turnos. Estos problemas no solo generan frustración entre los empleados, sino que también afectan la productividad general de la empresa. La situación subraya la necesidad de implementar una solución automatizada que permita centralizar y optimizar la gestión de horarios, mejorando la precisión y facilitando la administración diaria. </p>
-    </div>
-    
-</div>
+        </div>
 
 
-    
+
 
 
 
 
 </body>
+
 </html>

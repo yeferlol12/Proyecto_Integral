@@ -12,6 +12,9 @@ body {
   text-decoration: none;
   background-color: #021c1e;
   background-image: url(../imagenes/fondo-total.avif);
+  height: 100vh; /* Ocupa toda la altura de la viewport */
+  width: 100vw; /* Ocupa todo el ancho de la viewport */
+  overflow: hidden; /* Oculta cualquier contenido que exceda los límites */
 }
 
 /* Estilos del encabezado */
@@ -314,6 +317,8 @@ body {
   -webkit-text-stroke: 2px rgb(180, 137, 96); /* Para navegadores basados en WebKit (Chrome, Safari) */
   text-stroke: 2px rgb(180, 137, 96); /* Para otros navegadores modernos */
   letter-spacing: 5px;
+  font-weight: bold;
+  font-weight: 700;
   /* Espaciado entre letras */
 }
 
@@ -474,6 +479,25 @@ div nav ul li:hover>.desplegabl {
   display: block; /* Muestra el enlace en bloque */
   padding: 5px; /* Espacio interno del enlace */
   transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.contenedor-universal{
+  position: relative;
+  height: 400px;
+  top: 18%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-contacto{
+  background-color: #af5420c7;
+  width: 220px;
+  height: 220px;
+  margin: 10px;
+  padding: 10px;
+}
+.contenedor-contacto button{
+  background-color: aqua;
 }
 
 

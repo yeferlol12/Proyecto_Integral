@@ -79,7 +79,7 @@ body {
 .nav ul li ul {
   position: absolute;
   display: block;
-  top: 80px;
+  top: 70px;
   right: 200px;
   display: none;
 }
@@ -466,6 +466,63 @@ div nav ul li:hover>.desplegabl {
   padding: 5px; /* Espacio interno del enlace */
   transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
 }
-.contenedor-imagen img{
-  opacity: 0.7;
+.contenedor-universal{
+  position: relative;
+  height: 550px;
+  padding: 30px;
+  top: 14%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.contenedor-titulo{
+  width: 600px; 
+    /* margin para definir la margen exterior de las tarjetas */
+    margin: 10px; 
+    /* en border se define el tipo, el grosor y el color del borde de las targetas */
+    background: linear-gradient(to right, #f2721c8c, #e9405921);
+    /* padding para el espaciado entre la margen y el contenido */
+    padding: 20px; 
+    /* el atributo border-radius define el el borde en las esquinas con un estilo circular */
+    border-radius: 5px; 
+    /* box-shadow para dar un efecto de sombra al encabezado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+.contenedor-texto{
+  width: 700px; 
+  /* margin para definir la margen exterior de las tarjetas */
+  margin: 10px; 
+  /* en border se define el tipo, el grosor y el color del borde de las targetas */
+  background: linear-gradient(to left, #f2721c00, #e940593d);
+  /* padding para el espaciado entre la margen y el contenido */
+  padding: 20px; 
+  /* el atributo border-radius define el el borde en las esquinas con un estilo circular */
+  border-radius: 5px; 
+    /* box-shadow para dar un efecto de sombra al encabezado */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tarjeta {
+  padding: 10px;
+}
+.contenedor-texto img {
+  width: 200px;
+  height: auto;
+}
+.contenedor-texto p{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #69e6fc52;
+  border-radius: 5px;
+  font-weight: bold;
+  font-weight: 700;
 }
